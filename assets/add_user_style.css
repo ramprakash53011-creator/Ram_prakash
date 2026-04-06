@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.header {
+    background: linear-gradient(to right, #4c51bf, #667eea);
+    color: white;
+    padding: 18px 25px;
+    text-align: center;
+}
+
+.header h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.form-container {
+    padding: 25px 30px;   /* Further reduced */
+}
+
+.form-group {
+    margin-bottom: 16px;  /* Tighter spacing */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid #e2e8f0;
+    border-radius: 9px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.12);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 75px;     /* Smaller textarea */
+}
+
+button {
+    background: linear-gradient(to right, #4c51bf, #667eea);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 9px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 6px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(76, 81, 191, 0.35);
+}
+
+.message {
+    padding: 11px 15px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.98rem;
+}
+
+.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .container {
+        margin: 8px;
+        border-radius: 12px;
+    }
+    .form-container{
+        padding: 22px 25px;
+    }
+    .header {
+        padding: 16px 20px;
+    }
+    .header h2 {
+        font-size: 1.65rem;
+    }
+}
